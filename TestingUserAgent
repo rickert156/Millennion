@@ -14,6 +14,8 @@ def ParseResult(response):
 def InitRequest():
     site = 'https://n5m.ru/usagent.html'
     response = requests.get(site, headers=head())
+    print(response.headers)
+    response.encoding = 'windows-1251' #Добавлено для тестирования, особого значения не имеет
     response = response.text
     ParseResult(response)
 
