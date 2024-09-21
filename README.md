@@ -14,7 +14,7 @@ source venv/bin/activate
 ```sh
 pip install -r requirements.txt
 ```
-Пример использования:
+Пример использования(Requests):
 ```sh
 from utils.generateAgent import head
 import requests
@@ -22,4 +22,22 @@ import requests
 site = 'https://example.com/'
 
 response = requests.get(site, headers=head())
+```
+
+Пример использования(Selenium)
+```sh
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from utils.generateAgent import head
+import time
+
+options = Options()
+options.add_argument(f'user-agent={head()}')
+
+site = 'https://example.com/'
+
+driver = webdriver.Chrome(options=options)
+driver.maximize_window()
+driver.get(site)
+time.sleep(5)
 ```
