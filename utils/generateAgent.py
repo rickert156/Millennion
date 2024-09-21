@@ -1,14 +1,19 @@
 import random
 from utils.userAgentList import userAgentList
+from utils.AcceptEncoding import AcceptEncoding
+
 def head():
-    list_length = len(userAgentList)
-    selectAgent = random.randint(0, list_length)
-    Agent = userAgentList[selectAgent]
-    headers = {'User-Agent':Agent}
+    Agent = randData(userAgentList)
+    Accept_Encoding = randData(AcceptEncoding)
+    headers = {
+            'User-Agent':Agent,
+            'Accept-Encoding':Accept_Encoding
+            }
     return headers
 
+def randData(listDate):
+    list_length = len(listDate)
+    selectDate = random.randint(0, list_length-1)
+    data = listDate[selectDate]
+    return data
 
-#number_agent = 0
-#for agent in userAgentList:
-#    number_agent+=1
-#    print(f'[{number_agent}] {agent}\n')

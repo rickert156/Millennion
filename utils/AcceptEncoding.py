@@ -1,0 +1,5 @@
+AcceptEncoding = [
+        'gzip', 
+        'deflate', 
+        'zstd'
+        ]
