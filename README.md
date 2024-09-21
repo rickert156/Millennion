@@ -14,6 +14,8 @@ source venv/bin/activate
 ```sh
 pip install -r requirements.txt
 ```
+## Работа с модулем Head
+
 Пример использования(Requests):
 ```sh
 from utils.generateAgent import head
@@ -40,4 +42,12 @@ driver = webdriver.Chrome(options=options)
 driver.maximize_window()
 driver.get(site)
 time.sleep(5)
+```
+## Логирование с моделем Loger
+
+```sh
+from utils.loger import Loger
+
+dataServer = response.headers
+Loger(site, dataServer)
 ```

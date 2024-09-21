@@ -4,6 +4,7 @@ from utils.AcceptEncoding import AcceptEncoding
 from utils.Accept import Accept
 from utils.ContentType import ContentType
 from utils.AcceptLanguage import AcceptLanguage
+
 def head():
     Agent = randData(userAgentList)
     Accept_Encoding = randData(AcceptEncoding)

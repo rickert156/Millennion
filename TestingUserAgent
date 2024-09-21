@@ -4,6 +4,7 @@
 import requests
 from bs4 import BeautifulSoup
 from utils.generateAgent import head
+from utils.loger import Loger 
 
 
 def ParseResult(response):
@@ -14,7 +15,8 @@ def ParseResult(response):
 def InitRequest():
     site = 'https://n5m.ru/usagent.html'
     response = requests.get(site, headers=head())
-    print(response.headers)
+    dataServer = response.headers
+    Loger(site, dataServer)
     response.encoding = 'windows-1251' #Добавлено для тестирования, особого значения не имеет
     response = response.text
     ParseResult(response)
