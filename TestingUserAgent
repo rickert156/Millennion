@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from utils.generateAgent import head
 from utils.loger import Loger 
-
+from whois.whois import whois
 
 def ParseResult(response):
     bs = BeautifulSoup(response, 'lxml')
@@ -22,4 +22,3 @@ def InitRequest():
     ParseResult(response)
 
 InitRequest()
-

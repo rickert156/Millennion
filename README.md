@@ -51,3 +51,11 @@ from utils.loger import Loger
 dataServer = response.headers
 Loger(site, dataServer)
 ```
+
+## Использование модуля Whois
+В модуле уже подключен user-agent
+```sh
+from whois.whois import whois
+
+whois('site.com')
+```
