@@ -24,4 +24,4 @@ def InitRequest():
 
 #InitRequest()
 
-searchRobots('https://digitaloctane.co/')
+searchRobots('https://test.com/')

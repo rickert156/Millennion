@@ -59,3 +59,10 @@ from whois.whois import whois
 
 whois('site.com')
 ```
+
+## Использование модуля robots(поиск и запись  robots.txt)
+```sh
+from utils.robots import searchRobots
+
+searchRobots('https://test.com')
+```
