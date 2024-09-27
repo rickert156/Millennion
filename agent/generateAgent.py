@@ -1,9 +1,9 @@
 import random
-from utils.UserAgentList import userAgentList
-from utils.AcceptEncoding import AcceptEncoding
-from utils.Accept import Accept
-from utils.ContentType import ContentType
-from utils.AcceptLanguage import AcceptLanguage
+from agent.UserAgentList import userAgentList
+from agent.AcceptEncoding import AcceptEncoding
+from agent.Accept import Accept
+from agent.ContentType import ContentType
+from agent.AcceptLanguage import AcceptLanguage
 
 def head():
     Agent = randData(userAgentList)

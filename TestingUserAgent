@@ -3,10 +3,10 @@
 
 import requests
 from bs4 import BeautifulSoup
-from utils.generateAgent import head
-from utils.loger import Loger 
+from agent.generateAgent import head
+from agent.loger import Loger 
 from whois.whois import whois
-from utils.robots import searchRobots
+from agent.robots import searchRobots
 
 def ParseResult(response):
     bs = BeautifulSoup(response, 'lxml')
@@ -22,6 +22,6 @@ def InitRequest():
     response = response.text
     ParseResult(response)
 
-#InitRequest()
+InitRequest()
 
-searchRobots('https://test.com/')
+#searchRobots('https://test.com/')

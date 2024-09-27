@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from utils.generateAgent import head
+from agent.generateAgent import head
 
 def whois(domain):
 	params = {'domain':{domain}}

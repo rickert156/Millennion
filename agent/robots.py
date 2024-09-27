@@ -1,6 +1,6 @@
 import requests, os, time
 from bs4 import BeautifulSoup
-from utils.generateAgent import head
+from agent.generateAgent import head
 
 DIR_ROBOTS = 'Robots'
 

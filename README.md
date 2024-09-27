@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 Пример использования(Requests):
 ```sh
-from utils.generateAgent import head
+from agent.generateAgent import head
 import requests
 
 site = 'https://example.com/'
@@ -30,7 +30,7 @@ response = requests.get(site, headers=head())
 ```sh
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from utils.generateAgent import head
+from agent.generateAgent import head
 import time
 
 options = Options()
@@ -46,7 +46,7 @@ time.sleep(5)
 ## Логирование с моделем Loger
 
 ```sh
-from utils.loger import Loger
+from agent.loger import Loger
 
 dataServer = response.headers
 Loger(site, dataServer)
@@ -62,7 +62,7 @@ whois('site.com')
 
 ## Использование модуля robots(поиск и запись  robots.txt)
 ```sh
-from utils.robots import searchRobots
+from agent.robots import searchRobots
 
 searchRobots('https://test.com')
 ```
