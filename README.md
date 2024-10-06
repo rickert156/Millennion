@@ -1,5 +1,6 @@
-# Millennion
+![Header](https://github.com/rickert156/rickert156/blob/main/assets/img2.png)
 
+# Millennion
 Создайте виртуальное окружение
 ```sh
 python3 -m venv venv
