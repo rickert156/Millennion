@@ -58,14 +58,14 @@ Loger(site, dataServer)
 ## Использование модуля Whois
 В модуле уже подключен user-agent
 ```sh
-from whois.whois import whois
+from agent.whois.whois import whois
 
 whois('site.com')
 ```
 
 ## Использование модуля robots(поиск и запись  robots.txt)
 ```sh
-from agent.robots import searchRobots
+from agent.robots.robots import searchRobots
 
 searchRobots('https://test.com')
 ```
