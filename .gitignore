@@ -1,5 +1,6 @@
 venv/
 agent/__pycache__
+agent/robots/__pycache__
 agent/whois/__pycache__
 Log/
 WHOIS_REPORT/
