@@ -5,8 +5,8 @@ import requests
 from bs4 import BeautifulSoup
 from agent.generateAgent import head
 from agent.loger import Loger 
-from whois.whois import whois
-from agent.robots import searchRobots
+from agent.whois.whois import whois
+from agent.robots.robots import searchRobots
 
 def ParseResult(response):
     bs = BeautifulSoup(response, 'lxml')
@@ -24,4 +24,5 @@ def InitRequest():
 
 InitRequest()
 
-#searchRobots('https://test.com/')
+searchRobots('https://zen.ati.su/')
+whois('ati.su')
